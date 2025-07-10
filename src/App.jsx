@@ -14,9 +14,9 @@ function App() {
         </div>
         <div className='flex flex-col gap-2'>
              
-             <Button link="https://www.instagram.com/_enzo.dev/" />
+             <Button text='Instagram' link="https://www.instagram.com/_enzo.dev/" />
 
-             <Button link="https://www.tiktok.com/@_enzo.dev0?_t=ZM-8xsKbIRvCGE&_r=1" />
+             <Button text="TikTok" link="https://www.tiktok.com/@_enzo.dev0?_t=ZM-8xsKbIRvCGE&_r=1" />
 
         </div>
       
