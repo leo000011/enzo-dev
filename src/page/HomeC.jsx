@@ -10,57 +10,57 @@ const Home = () => {
     const [loading, setLoading] = useState(true);
 
 
-  useEffect(() => {
-    axios.get(`https://api-rest-9jb0.onrender.com/products`)
-    .then((response) => {
-      console.log('Usuários recebidos:', response.data.get1)
-      setUsers(response.data.get1)
-              setLoading(false);
-
-    }).catch((error) => {
-        console.error('Erro ao buscar usuários:', error);
-        setLoading(false);
-      });
-  }, [])
-
-    if (loading) return <p>Carregando...</p>;
 
 
     return (
-        <>
-        <div className='bg-gray-500 h-screen p-5 flex justify-center items-center flex-col gap-3'>
-      <div className='w-[200px] md:w-[700px] '>
-        <div className='flex flex-col gap-6 mb-6'>
+       <div className="min-h-screen bg-black text-white px-4 py-10 font-sans">
+      {/* Seção 1 - Atenção */}
+      <section className="text-center mb-10">
+        <h1 className="text-4xl md:text-6xl font-bold text-yellow-400 mb-4">
+          Desbravando a Programação
+        </h1>
+        <p className="text-xl md:text-2xl text-white">
+          Guia Prático para Iniciantes 🚀
+        </p>
+      </section>
 
-        <div className='flex flex-col gap-2 items-center bg-white p-6 rounded-2xl hover:bg-yellow-400'>
-          <img src={imagem} alt="enzo" className=' h-[80px] w-[80px] md:h-[100px] md:w-[100px] rounded-full  border-solid border-white border-2' />
-          <h2 className='text-black font-medium'>@_enzo.dev</h2>
-        </div>
+      {/* Seção 2 - Interesse */}
+      <section className="max-w-3xl mx-auto text-center mb-10">
+        <p className="text-lg text-blue-400 mb-6">
+          Já imaginou aprender a programar do zero sem complicações?
+        </p>
+        <p className="text-white">
+          Com este eBook direto ao ponto, você vai entender os principais conceitos da programação e da lógica de forma fácil, rápida e prática. Ideal para quem quer dar os primeiros passos na tecnologia.
+        </p>
+      </section>
 
-        <div>
-          <div className='bg-white/70 inline-block p-1 rounded-full'>
-            
-          <Instagram className='text- black'/>
-         <div className='bg-yellow-500 text-white font-bold'>
-          {users.map((user) => (
-          <li key={user.id}>{user.name}</li>
-        ))}
-         </div>
-          </div>
-        </div>
-      </div>
+      {/* Seção 3 - Desejo */}
+      <section className="max-w-3xl mx-auto bg-yellow-400 text-black p-6 rounded-2xl shadow-lg mb-10">
+        <h2 className="text-2xl font-bold mb-4 text-center">
+          O que você vai ganhar com este eBook:
+        </h2>
+        <ul className="space-y-2 text-lg">
+          <li>💡 Aprenda lógica e programação do zero</li>
+          <li>🚀 Comece sua jornada como programador</li>
+          <li>🧠 Desenvolva raciocínio lógico</li>
+          <li>💻 Entenda variáveis, laços e condições</li>
+          <li>💰 Economize tempo e dinheiro com conteúdo direto</li>
+        </ul>
+      </section>
 
-      <div className='flex flex-col gap-2'>
-
-        <Button text="Instagram" link="https://www.instagram.com/_enzo.dev/" />
-
-        <Button text="TikTok" link="https://www.tiktok.com/@_enzo.dev0?_t=ZM-8xsKbIRvCGE&_r=1" />
-
-      </div>
-      </div>
+      {/* Seção 4 - Ação */}
+      <section className="text-center">
+        <h3 className="text-xl md:text-2xl mb-4 text-white">
+          📥 Adquira agora por apenas <span className="text-yellow-400 font-bold">R$ 8,99</span>
+        </h3>
+        <button onClick={handlerClick} className="cursor-pointer bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 px-6 rounded-full text-lg transition duration-300">
+          Quero o meu eBook!
+        </button>
+        <p className="text-sm text-gray-400 mt-4">
+          Acesso imediato por download. Sem complicações.
+        </p>
+      </section>
     </div>
-        
-        </>
     )
 }
 
