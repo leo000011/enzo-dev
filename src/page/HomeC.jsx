@@ -10,7 +10,9 @@ const Home = () => {
     const [loading, setLoading] = useState(true);
 
 
-
+const handlerClick = () => {
+    window.location = "https://pay.kiwify.com.br/yHaXeuq"
+  }
 
     return (
        <div className="min-h-screen bg-black text-white px-4 py-10 font-sans">
