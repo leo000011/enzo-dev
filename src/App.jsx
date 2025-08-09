@@ -1,6 +1,7 @@
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
 import Home from './page/HomeC';
 import EbookSalesPage from './page/vendaPage/VendaPage1';
+import DoacaoHelp from './page/Dog';
 
 
 function App() {
@@ -10,6 +11,7 @@ function App() {
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/products' element={<EbookSalesPage />} />
+          <Route path="/dogs" element={<DoacaoHelp />} />
         </Routes>
       </BrowserRouter>
     </>

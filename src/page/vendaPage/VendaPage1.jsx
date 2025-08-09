@@ -11,7 +11,7 @@ const EbookSalesPage = () => {
       {/* Seção 1 - Atenção */}
       <section className="text-center mb-10">
         <h1 className="text-4xl md:text-6xl font-bold text-yellow-400 mb-4">
-          Desbravando a Programação
+          Destravando a Programação
         </h1>
         <p className="text-xl md:text-2xl text-white">
           Guia Prático para Iniciantes 🚀
@@ -45,7 +45,7 @@ const EbookSalesPage = () => {
       {/* Seção 4 - Ação */}
       <section className="text-center">
         <h3 className="text-xl md:text-2xl mb-4 text-white">
-          📥 Adquira agora por apenas <span className="text-yellow-400 font-bold">R$ 8,99</span>
+          📥 Adquira agora por apenas <span className="text-yellow-400 font-bold">R$ 12,99</span>
         </h3>
         <button onClick={handlerClick} className="cursor-pointer bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 px-6 rounded-full text-lg transition duration-300">
           Quero o meu eBook!
